@@ -5,15 +5,20 @@
     font-family: Open Sans,sans-serif;
 }
 
+body, html {
+    height: 100%;
+}
+
 header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    width: 100vw;
-    height: 65px;
-    padding: 0 2vw;
-    background-color: #132235;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100vw;
+  height: 65px;
+  padding: 0 2vw;
+  background-color: #132235;
+  z-index: 1;
 }
 
 header img{
@@ -35,16 +40,52 @@ a{
 }
 
 
+/* =========== Content =========== */
+
+.bg-index-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), #132235), url(imagens/bg-estudantes.jpg);
+
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.bg-index-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+/* ================================= */
+
+.button-1 {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 12px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.button-1:hover {
+  background-color: #45898e;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
 footer{
-    bottom: 0;
-    position: relative;
     display: flex;
     height: 65px;
     justify-content: space-between;
     align-items: center;
     padding: 0 2vw;
     background-color: #132235;
-    color: white;
 }
 
 footer img{
@@ -65,7 +106,7 @@ footer img{
     font-size: 1.5em;
 }
 
-i:hover{
+i,a:hover{
     color: #777777;
     transition: color 0.5s;
 }
