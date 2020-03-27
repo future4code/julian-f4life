@@ -245,6 +245,29 @@ a{
 
 /* Footer */
 
+.contato {
+  display: grid;
+  justify-content: center;
+  padding: 10vw 2vw;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), #132235), url(imagens/bg-contato.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+}
+
+.contato-personal {
+  width: 600px;
+  height: 25px;
+}
+
+.contato-personal-msg {
+  width: 600px;
+  height: 105px;
+}
+
+
 footer{
     display: flex;
     height: 65px;
