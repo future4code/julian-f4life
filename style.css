@@ -23,7 +23,6 @@
 
 body, html {
     height: 100%;
-    width: 100vw;
 }
 
 /* Header */
@@ -106,7 +105,7 @@ a{
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
-/* =========== ServiÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â§o Index =========== */
+/* =========== ServiÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â§o Index =========== */
 
   .servicos-index {
     box-sizing: border-box;
@@ -186,14 +185,14 @@ a{
 
 }
 
-/* =========== Produtos e serviços ============= */
+/* =========== Produtos e serviÃ§os ============= */
 
-#containerprod { 
+#containerprod {
     width: 100%;
     padding: 70px 0;
-    display: grid; 
-    grid-template-columns: 20% 20% 20% 20%; 
-    grid-template-rows: 50% 50%; 
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-rows: 50% 50%;
     justify-content: center;
     gap: 10px;
 }
@@ -202,42 +201,42 @@ a{
     object-fit: cover;
     width: 90%;
     height: 90%;
-}  
+}
 
 section a {
     display: block;
     margin: 0 auto;
     text-align: center;
-    text-decoration: none; 
-    font-family: 'Open Sans', 'Helvetica Neue', sans-serif; 
-    font-size: 18px; 
-    color: black; 
+    text-decoration: none;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    color: black;
 }
 
 /* Quem somos */
 
 #containerquem {
     padding: 70px 0 0 0;
-    max-width: 100%; 
-    display: grid; 
+    max-width: 100%;
+    display: grid;
     grid-template-columns: 50% 50%;
-    justify-content: space-between;  
+    justify-content: space-between;
     background-color: #132235;
-} 
+}
 
-#item1 { 
+#item1 {
     margin-left: 10%;
-    width: fit-content; 
-    height: fit-content;       
-}  
+    width: fit-content;
+    height: fit-content;
+}
 
-#item2 { 
-    font-family: -apple-system, BlinkMacSystemFont, 
+#item2 {
+    font-family: -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 24px; 
-    color: black; 
-    text-align: center;  
-}  
+    font-size: 24px;
+    color: black;
+    text-align: center;
+}
 
 /* Footer */
 
