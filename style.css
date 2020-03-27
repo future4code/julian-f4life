@@ -7,6 +7,7 @@
 
 body, html {
     height: 100%;
+    width: 100vw;
 }
 
 /* Header */
@@ -16,7 +17,7 @@ header{
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  width: 100vw;
+  width: 100%;
   height: 65px;
   padding: 0 2vw;
   background-color: #132235;
@@ -89,21 +90,29 @@ a{
 /* Produtos e serviços */
 
 #container { 
+    width: 70%;
+    padding: 70px 0;
     display: grid; 
     grid-template-columns: 25% 25% 25% 25%; 
     grid-template-rows: 50% 50%; 
-    justify-content: space-between; 
-    margin:  0 auto;  
+    justify-content: center;
+    gap: 10px;
+}
+
+.alinhar{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 .imgprod{
+    flex-basis: 100%;
     width: 300px; 
     height: 220px; 
 }  
 
-div > a {
-    width: 300px; 
-    height: 220px; 
+.alinhar a {
     text-decoration: none; 
     font-family: 'Open Sans', 'Helvetica Neue', sans-serif; 
     font-size: 18px; 
