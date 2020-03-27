@@ -205,6 +205,8 @@ a{
 }  
 
 section a {
+    display: block;
+    margin: 0 auto;
     text-align: center;
     text-decoration: none; 
     font-family: 'Open Sans', 'Helvetica Neue', sans-serif; 
