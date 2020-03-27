@@ -5,24 +5,47 @@
     font-family: Open Sans,sans-serif;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #333;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #509fa0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 body, html {
     height: 100%;
+    width: 100vw;
 }
+
+/* Header */
 
 header{
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  width: 100vw;
+  width: 100%;
   height: 65px;
   padding: 0 2vw;
   background-color: #132235;
   z-index: 1;
 }
 
-header img{
+header a{
     height: 85%;
+}
+
+a img{
+    height: 100%;
 }
 
 #menu{
@@ -44,12 +67,12 @@ a{
 
 .bg-index-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), #132235), url(imagens/bg-estudantes.jpg);
-
   height: 50%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  background-attachment: fixed;
 }
 
 .bg-index-text {
@@ -72,12 +95,155 @@ a{
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+  outline:none;
 }
 
 .button-1:hover {
   background-color: #45898e;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  cursor: pointer;
+  background-color: #45898e;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
+
+/* =========== ServiÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â§o Index =========== */
+
+  .servicos-index {
+    box-sizing: border-box;
+    padding: 0 2vw;
+    margin-bottom: 50px;
+  }
+
+  .titulo-servicos-index > h2 {
+    color: black;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .servicos-index-caixa-1 {
+  float: left;
+  width: 48%;
+  height: 20%;
+  background-image: linear-gradient(#132235d4, #132235), url(imagens/bg-moradia.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+}
+
+.servicos-index-caixa-2 {
+  float: right;
+  width: 48%;
+  height: 20%;
+  background-image: linear-gradient(#132235d4, #132235), url(imagens/bg-ap.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+}
+
+.conteudo-servicos-index {
+  padding: 2vw 2vw;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* ================================= */
+
+/* =========== Contato Index =========== */
+
+.contato-index {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), #132235), url(imagens/bg-contato.jpg);
+  height: 25%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.bg-index-contato-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.titulo-contato-index > h2 {
+  color: #fff;
+}
+
+.titulo-contato-index {
+
+}
+
+/* =========== Produtos e serviços ============= */
+
+#containerprod { 
+    width: 100%;
+    padding: 70px 0;
+    display: grid; 
+    grid-template-columns: 25% 25% 25% 25%; 
+    grid-template-rows: 50% 50%; 
+    justify-content: center;
+    gap: 10px;
+}
+
+.alinhar{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgprod{
+    flex-basis: 100%;
+    width: 300px; 
+    height: 220px; 
+}  
+
+.alinhar a {
+    text-decoration: none; 
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif; 
+    font-size: 18px; 
+    color: black; 
+}
+
+/* Quem somos */
+
+#containerquem {
+    padding: 70px 0 0 0;
+    max-width: 100%; 
+    display: grid; 
+    grid-template-columns: 50% 50%;
+    justify-content: space-between;  
+    background-color: #132235;
+} 
+
+#item1 { 
+    margin-left: 10%;
+    width: fit-content; 
+    height: fit-content;       
+}  
+
+#item2 { 
+    font-family: -apple-system, BlinkMacSystemFont, 
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 24px; 
+    color: black; 
+    text-align: center;  
+}  
+
+/* Footer */
 
 footer{
     display: flex;
@@ -101,12 +267,32 @@ footer img{
     align-items: center;
 }
 
-.fa-github, .fa-envelope{
+.fa-github, .fa-twitter, .fa-facebook-square, .fa-instagram{
     color: white;
     font-size: 1.5em;
 }
 
-i,a:hover{
+a:hover, .fa-github:hover{
     color: #777777;
     transition: color 0.5s;
+}
+
+i:hover{
+    transition: color 0.7s;
+}
+
+.fa-twitter:hover{
+    color: #1da1f2;
+}
+
+.fa-facebook-square:hover{
+    color: #3c5998;
+}
+
+.fa-instagram:hover{
+    color: #bc2a8d;
+}
+
+.text-color-f4 {
+  color: #509fa0;
 }
