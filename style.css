@@ -9,6 +9,8 @@ body, html {
     height: 100%;
 }
 
+/* Header */
+
 header{
   display: flex;
   justify-content: space-between;
@@ -21,8 +23,12 @@ header{
   z-index: 1;
 }
 
-header img{
+header a{
     height: 85%;
+}
+
+a img{
+    height: 100%;
 }
 
 #menu{
@@ -44,7 +50,6 @@ a{
 
 .bg-index-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), #132235), url(imagens/bg-estudantes.jpg);
-
   height: 50%;
   background-position: center;
   background-repeat: no-repeat;
@@ -72,12 +77,16 @@ a{
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+  outline:none;
 }
 
 .button-1:hover {
-  background-color: #45898e;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    cursor: pointer;
+    background-color: #45898e;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
+
+/* Footer */
 
 footer{
     display: flex;
@@ -101,12 +110,28 @@ footer img{
     align-items: center;
 }
 
-.fa-github, .fa-envelope{
+.fa-github, .fa-twitter, .fa-facebook-square, .fa-instagram{
     color: white;
     font-size: 1.5em;
 }
 
-i,a:hover{
+a:hover, .fa-github:hover{
     color: #777777;
     transition: color 0.5s;
+}
+
+i:hover{
+    transition: color 0.7s;
+}
+
+.fa-twitter:hover{
+    color: #1da1f2;
+}
+
+.fa-facebook-square:hover{
+    color: #3c5998;
+}
+
+.fa-instagram:hover{
+    color: #bc2a8d;
 }
