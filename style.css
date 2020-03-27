@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     color: white;
+    font-family: Open Sans,sans-serif;
 }
 
 header{
@@ -19,13 +20,31 @@ header img{
     height: 85%;
 }
 
+#menu{
+    margin-right: 5vw;
+}
+
+li{
+    font-size: 1.2em;
+    display: inline;
+    padding: 0 5px;
+}
+
+a{
+    text-decoration: none;
+}
+
+
 footer{
+    bottom: 0;
+    position: relative;
     display: flex;
     height: 65px;
     justify-content: space-between;
     align-items: center;
     padding: 0 2vw;
     background-color: #132235;
+    color: white;
 }
 
 footer img{
