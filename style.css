@@ -64,7 +64,16 @@ a{
 
 /* =========== Content =========== */
 
+#content{
+  padding: 65px 0;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr;
+}
+
 .bg-index-image {
+  grid-row: 1;
+  grid-column: span 2;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), #132235), url(imagens/bg-estudantes.jpg);
   height: 80%;
   background-position: center;
@@ -333,4 +342,8 @@ i:hover{
 
 .text-color-f4 {
   color: #509fa0;
+}
+
+@media screen and (min-device-width : 320px) and (max-device-width : 420px){
+  
 }
